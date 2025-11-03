@@ -1,0 +1,984 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, sans-serif;
+    background-color: #ffffff;
+    line-height: 1.6;
+    color: #111111;
+}
+
+/* Layout components */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1440px;
+    margin: 0 auto;
+    /* Це центрує блок по горизонталі */
+}
+
+.hero-section {
+    background-color: #0d171d;
+    border-radius: 0px 0px 50px 50px;
+    padding: 16px;
+    width: 100%;
+    height: 803px;
+    position: relative;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    max-width: 1186px;
+    margin: 0 auto;
+    gap: 60px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #a1d737;
+    color: #0d171d;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #fafafa;
+    border: 1px solid rgba(250, 250, 250, 0.3);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.search-btn {
+    display: none;
+}
+
+.hero-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.portal-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 40px;
+}
+
+.portal-bg {
+    width: 532px;
+    height: 411px;
+    border-radius: 238px;
+
+    position: relative;
+    left: 130px;
+    top: -180px;
+
+}
+
+.spaceship {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 462px;
+    height: 184px;
+}
+
+.rick-morty-logo {
+    width: 60%;
+    max-width: 300px;
+    height: auto;
+    margin-top: -10px;
+}
+
+.hero-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #fafafa;
+    text-align: center;
+    position: relative;
+    top: -420px;
+    right: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.scroll-indicator {
+    border: 1px solid rgba(250, 250, 250, 0.5);
+    border-radius: 40px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.scroll-arrow {
+    width: 40px;
+    height: 40px;
+}
+
+/* Floating tags */
+.floating-tags {
+    position: relative;
+    width: 100%;
+    margin: -30px 16px 0;
+    height: 120px;
+    overflow: hidden;
+}
+
+.tag {
+    position: absolute;
+    padding: 8px 16px;
+    border-radius: 24px;
+    font-weight: 600;
+    font-size: 16px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tag:hover {
+    transform: scale(1.1);
+}
+
+.tag-animated {
+    background-color: #a1d737;
+    color: #111111;
+    top: 20px;
+    left: 20px;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.tag-sitcom {
+    background-color: #daf836;
+    color: #111111;
+    top: 0px;
+    left: 120px;
+    font-size: 19px;
+    padding: 22px 28px;
+}
+
+.tag-adventures {
+    background-color: #0d171d;
+    color: #fafafa;
+    bottom: 20px;
+    left: 10px;
+    font-size: 19px;
+    padding: 8px 22px;
+}
+
+.tag-justin {
+    background-color: #a1d737;
+    color: #111111;
+    bottom: 0px;
+    left: 160px;
+    font-size: 19px;
+    padding: 8px 16px;
+}
+
+.tag-superpower {
+    background-color: #0d171d;
+    color: #a1d737;
+    bottom: 20px;
+    right: 120px;
+    font-size: 19px;
+    padding: 24px 30px;
+}
+
+.tag-creative {
+    background-color: #daf836;
+    color: #111111;
+    top: 40px;
+    right: 140px;
+    font-size: 18px;
+    padding: 24px;
+}
+
+.tag-amazing {
+    background-color: #a1d737;
+    color: #111111;
+    bottom: 0px;
+    right: 80px;
+    font-size: 19px;
+    padding: 6px 12px;
+}
+
+.tag-rick-morty {
+    background-color: #0d171d;
+    color: #fafafa;
+    bottom: 0px;
+    right: 20px;
+    font-size: 19px;
+    padding: 6px 12px;
+}
+
+.tag-comics {
+    background-color: #daf836;
+    color: #111111;
+    top: 20px;
+    right: 20px;
+    font-size: 19px;
+    padding: 20px 24px;
+}
+
+.tag-follows {
+    background-color: #0d171d;
+    color: #daf836;
+    bottom: 40px;
+    right: 200px;
+    font-size: 18px;
+    padding: 10px 22px;
+}
+
+.tag-characters {
+    background-color: #daf836;
+    color: #111111;
+    top: 0px;
+    right: 60px;
+    font-size: 19px;
+    padding: 20px;
+}
+
+.tag-whoa {
+    background-color: #a1d737;
+    color: #111111;
+    bottom: 10px;
+    right: 0px;
+    font-size: 19px;
+    padding: 8px 12px;
+}
+
+/* Characters section */
+.characters-section {
+    width: 100%;
+    max-width: 1186px;
+    margin: 60px auto;
+    padding: 0 16px;
+}
+
+.section-title {
+    /* display: inline-block;
+    background-color: #0d171d;
+    border-radius: 28px;
+    padding: 16px 24px;
+    margin-bottom: 40px; */
+}
+
+.section-title h1 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.section-title .main-text {
+    display: inline-block;
+    background-color: #000000;
+    border-radius: 28px;
+    padding: 16px 24px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.section-title .characters-text {
+    color: #0d171d;
+}
+
+.characters-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.character-name {
+    cursor: pointer;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.character-name.active {
+    color: #9acd32;
+    /* зелений колір як у Rick Sanchez */
+}
+
+.character-image {
+    transition: opacity 0.4s ease;
+}
+
+.character-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a1d737;
+    border-radius: 50px;
+    padding: 32px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.character-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.character-details {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.character-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.character-name {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    color: #a1d737;
+}
+
+.character-name.secondary {
+    color: #111111;
+}
+
+.character-description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #111111;
+}
+
+.character-divider {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(17, 17, 17, 0.2);
+    margin: 8px 0;
+}
+
+/* Episodes section */
+.episodes-section {
+    background-color: #0d171d;
+    border-radius: 50px;
+    padding: 60px 16px;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.episodes-content {
+    width: 100%;
+    max-width: 1186px;
+    margin: 0 auto;
+}
+
+.episodes-header {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.episodes-title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    color: #fafafa;
+    max-width: 400px;
+}
+
+.explore-highlight {
+    background-color: #a1d737;
+    color: #0d171d;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+
+.episodes-gallery {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 20px;
+    margin-bottom: 32px;
+}
+
+.episode-card {
+    flex-shrink: 0;
+    width: 200px;
+    height: 225px;
+    border: 3px solid #a1d737;
+    border-radius: 18px;
+    background-color: #0d171d;
+    overflow: hidden;
+}
+
+.episode-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.episodes-btn {
+    background-color: #a1d737;
+    color: #0d171d;
+    padding: 12px 24px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 0;
+    float: right;
+}
+
+/* Footer */
+.footer {
+    background-color: #fafafa;
+    padding: 60px 16px 16px;
+    width: 100%;
+    margin-top: -40px;
+}
+
+.footer-content {
+    width: 100%;
+    max-width: 1186px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.footer-main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo {
+
+    width: 150px;
+    height: auto;
+    position: relative;
+    top: 75px;
+}
+
+.footer-tags {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer-tag-rick {
+    background-color: #0d171d;
+    color: #fafafa;
+    padding: 10px 16px;
+    border-radius: 24px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer-tag-morty {
+    background-color: #daf836;
+    color: #111111;
+    padding: 22px 32px;
+    border-radius: 24px;
+    font-size: 19px;
+    font-weight: 600;
+    margin-left: -30px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.footer-link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #111111;
+    text-decoration: none;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    width: 56px;
+    height: 56px;
+    border: 1px solid rgba(17, 17, 17, 0.2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    border-color: #a1d737;
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: rgba(17, 17, 17, 0.4);
+}
+
+/* Responsive media queries */
+@media (min-width: 640px) {
+    .hero-section {
+        border-radius: 0px 0px 80px 80px;
+        padding: 24px;
+    }
+
+    .hero-content {
+        gap: 80px;
+    }
+
+    .search-btn {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding-left: 50px;
+        position: relative;
+    }
+
+    .search-btn::before {
+        content: "";
+        position: absolute;
+        left: 24px;
+        width: 18px;
+        height: 18px;
+        background-image: url("../assets/images/img_search.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .portal-container {
+        max-width: 500px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+        max-width: 350px;
+    }
+
+    .floating-tags {
+        height: 140px;
+        margin: -30px 24px 0;
+    }
+
+    .section-title h1 {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .character-name {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .character-description {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .episodes-title {
+        font-size: 38px;
+        line-height: 44px;
+        max-width: 500px;
+    }
+
+    .episode-card {
+        width: 240px;
+        height: 270px;
+    }
+
+    .footer-main {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .footer-logo-section {
+        align-items: flex-start;
+    }
+
+    .footer-nav {
+        flex-direction: row;
+        gap: 60px;
+    }
+
+    .footer-links {
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero-section {
+        border-radius: 0px 0px 100px 100px;
+        padding: 24px 32px;
+    }
+
+    .hero-content {
+        gap: 100px;
+    }
+
+    .portal-container {
+        max-width: 600px;
+    }
+
+    .rick-morty-logo {
+        width: 70%;
+        max-width: 400px;
+    }
+
+    .floating-tags {
+        height: 160px;
+        margin: -30px 32px 0;
+    }
+
+    .characters-content {
+        flex-direction: row;
+        gap: 30px;
+        align-items: flex-start;
+    }
+
+    .character-image-container {
+        width: 44%;
+        max-width: none;
+        margin: 0;
+    }
+
+    .character-details {
+        width: 56%;
+    }
+
+    .section-title h1 {
+        font-size: 44px;
+        line-height: 54px;
+    }
+
+    .character-name {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .episodes-title {
+        font-size: 44px;
+        line-height: 48px;
+        max-width: 600px;
+    }
+
+    .episode-card {
+        width: 278px;
+        height: 314px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-section {
+        padding: 24px 126px;
+    }
+
+    .hero-content {
+        gap: 124px;
+    }
+
+    .portal-container {
+        max-width: 700px;
+    }
+
+    .rick-morty-logo {
+        width: 80%;
+        max-width: 500px;
+    }
+
+    .hero-text {
+        max-width: 400px;
+        text-align: left;
+        align-self: flex-start;
+        margin-left: 0;
+    }
+
+    .floating-tags {
+        height: 180px;
+        margin: -60px 16px 0;
+    }
+
+    .characters-section {
+        padding: 0 126px;
+    }
+
+    .episodes-section {
+        padding: 96px 126px;
+    }
+
+    .footer {
+        padding: 110px 126px 16px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .portal-container {
+        max-width: 800px;
+    }
+
+    .floating-tags {
+        height: 200px;
+    }
+}
+
+/* ===============================
+   📱 TABLET (до 1024px)
+================================= */
+@media (max-width: 1024px) {
+    .main-container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .hero-section {
+        height: auto;
+        border-radius: 0 0 30px 30px;
+        padding: 40px 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .nav-buttons {
+        gap: 6px;
+    }
+
+    .portal-bg {
+        width: 400px;
+        height: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .spaceship {
+        width: 350px;
+        height: auto;
+        display: block;
+        margin: -60px auto 0;
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-text {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 90%;
+        font-size: 14px;
+        margin-top: 20px;
+        text-align: center;
+        z-index: 3;
+    }
+}
+
+/* ===============================
+   📲 MOBILE (до 768px)
+================================= */
+@media (max-width: 768px) {
+    .hero-section {
+        height: auto;
+        border-radius: 0 0 30px 30px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .nav-buttons {
+        display: none;
+        /* приховані кнопки */
+    }
+
+    .search-btn {
+        display: block;
+    }
+
+    .portal-bg {
+        width: 260px;
+        height: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        display: block;
+        z-index: 1;
+    }
+
+    .spaceship {
+        width: 220px;
+        height: auto;
+        margin: -40px auto 0;
+        position: relative;
+        display: block;
+        z-index: 2;
+    }
+
+    .rick-morty-logo {
+        width: 70%;
+        margin: 10px auto 0;
+        display: block;
+    }
+
+    .hero-text {
+        position: relative;
+        top: 0;
+        width: 100%;
+        font-size: 13px;
+        text-align: center;
+        margin-top: 20px;
+        padding: 0 12px;
+        z-index: 3;
+    }
+
+    .floating-tags {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        gap: 10px;
+        margin: 10px auto;
+        position: relative;
+    }
+
+    .characters-section {
+        margin: 40px auto;
+        padding: 0 16px;
+    }
+
+    .section-title h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .character-image-container {
+        max-width: 260px;
+        border-radius: 24px;
+        padding: 16px;
+    }
+
+    .episodes-section {
+        margin-top: 40px;
+        border-radius: 30px;
+        padding: 32px 16px;
+    }
+
+    .episodes-gallery {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .episode-card {
+        width: 160px;
+        height: 180px;
+    }
+
+    .footer {
+        margin-top: 20px;
+        padding: 40px 16px;
+    }
+}
