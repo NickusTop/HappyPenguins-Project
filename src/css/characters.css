@@ -95,3 +95,10 @@ main {
     width: 504px;
     height: 504px;
 }
+.main-tags-img {
+    position: absolute;
+    bottom: -130px;
+    height: auto;
+    left: 0px;
+    width: 100%;
+}
