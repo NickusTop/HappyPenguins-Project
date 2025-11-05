@@ -1,0 +1,37 @@
+header {
+    width: 100%;
+    background-color: #e0e0e0;
+}
+.header-div {
+    background-color: #f0f0f0;
+    width: 100%;
+    padding: 24px;
+    padding-left: 128px;
+    padding-right: 128px;
+    background-color: #0D171D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logohead-img {
+    width: 193px;
+    height: 73px;
+}
+.header-btn {
+    background: transparent;
+    border: 1px solid #FAFAFA4D;
+    width: 124px;
+    height: 42px;
+    border-radius: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-img {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}

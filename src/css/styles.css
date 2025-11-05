@@ -1,23 +1,23 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./vite-promo.css');
+@import url('./mainpage/mainpage-header.css');
+@import url('./mainpage/mainpage-hero.css');
+@import url('./mainpage/mainpage-characters.css');
+@import url('./mainpage/mainpage-episodes.css');
+@import url('./mainpage/mainpage-footer.css');
+@import url('./characters/characterspage-header.css');
+@import url('./characters/characterspage-hero.css');
+@import url('./characters/characterspage-characters.css');
+@import url('./characters/characterspage-footer.css');
+@import url('./characters/characterspage-modal.css');
+@import url('./episodes/episodespage-header.css');
+@import url('./episodes/episodespage-hero.css');
+@import url('./episodes/episodespage-episodes.css');
+@import url('./episodes/episodespage-footer.css');
+@import url('./episodes/episodespage-modal.css');
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+-- Тут вже все підключено --
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
