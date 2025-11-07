@@ -6,8 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Characters</title>
     
-    <script type="module" crossorigin src="/HappyPenguins-Project/assets/main-e4dd6f0c.js"></script>
-    <link rel="stylesheet" href="/HappyPenguins-Project/assets/main-97dda546.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/HappyPenguins-Project/assets/main-676485d4.js"></script>
+    <link rel="stylesheet" href="/HappyPenguins-Project/assets/main-0e973742.css">
   </head>
   <body>
     <body>
@@ -32,20 +38,26 @@
     <button class="main-btn">Back home</button>
   </ul>
   <img src="../../img/characters/image.png" class="main-img" alt="" />
-  <img src="../../img/characters/Tags.png" class="main-tags-img" alt="" />
 </div>
 
         <div class="characters-div">
+  <img src="../../img/characters/Tags.png" class="main-tags-img" alt="" />
   <ul class="filter-ul">
     <li class="filter-li">
       <p class="filter-p">Name</p>
+      <div class="filter-input-div">
         <input type="text" class="filter-input" placeholder="Enter name" />
+        <img src="../../img/characters/search-black.png" class="search-inp-img" alt="">
+      </div>
     </li>
     <li class="filter-li">
       <p class="filter-p">Status</p>
-      <select class="filter-select">
-        <option value=""></option>
-      </select>
+      <button class="select-btn">Alive <img src="../../img/characters/chevron-down.png" class="chevron-img chevron-status" alt=""></button>
+      <ul class="select-ul select-ul-status">
+        <li class="select-li"><a class="select-a" href="">Alive</a></li>
+        <li class="select-li"><a class="select-a" href="">Dead</a></li>
+        <li class="select-li"><a class="select-a" href="">Unknown</a></li>
+      </ul>
     </li>
     <li class="filter-li">
       <p class="filter-p">Species</p>
@@ -68,9 +80,8 @@
   </ul>
 </div>
 
-      <main>
-      </main>
-    </div>
+        <main></main>
+      </div>
     </body>
     
   </body>
