@@ -68,12 +68,22 @@
 .chevron-status {
     margin-left: 60px;
 }
+.chevron-species {
+    margin-left: 79px;
+}
+.chevron-type {
+    margin-left: 45px;
+}
+.chevron-gender {
+    margin-left: 80px;
+}
 .select-ul {
-    list-style: none;
-    padding: 16px 24px;
-    background-color: white;
-    border: 2px solid #000000;
-    border-radius: 15px;
+  list-style: none;
+  padding: 16px 24px;
+  background-color: white;
+  border: 2px solid #000000;
+  border-radius: 15px;
+  
 }
 .select-a {
     text-decoration: none;
@@ -82,6 +92,6 @@
 .select-li:not(:first-child) {
     margin-top: 8px;
 }
-.select-ul-status {
+.select-ul-status, .select-ul-species, .select-ul-type, .select-ul {
     display: none;
 }
