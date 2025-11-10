@@ -5,17 +5,20 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Episodes</title>
-    <link rel="stylesheet" href="./css/styles.css" /> -- Тут підключено все! Окрім шрифтів
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" /> 
   </head>
   <body>
     <body>
-
-      Щоб підключити вашу секцію треба додати:
-      <load ="partials/mainpage/vite-promo.html" /> -- це приклад там замість vite-promo треба вказати вашу секцію, а
-      замість mainpage вашу папку з секціями (ВИ В ЦЕЙ ФАЙЛ ТАМ ДЕ СЕКЦІЯ ПРОСТО ДОДАЄТЕ div або section і все не 
-      треба нічого там підлюкчати)
-
+      <div class="all-div">
+        <load ="partials/characters/episodes-header.html" />
+        <load ="partials/characters/episodes-hero.html" />
+        <load ="partials/characters/characters-footer.html" />
+        <load ="partials/characters/characters-modal.html" />
+      </div>
     </body>
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="js/episodes.js"></script>
   </body>
 </html>
