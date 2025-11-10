@@ -93,3 +93,12 @@ main {
     max-width: 320px;
   }
 }
+@media (max-width: 768px) {
+  .main-div {
+    flex-direction: column;
+    padding: 40px 16px 64px 16px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    gap: 32px;
+  }
+}
