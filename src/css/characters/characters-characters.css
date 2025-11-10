@@ -4,12 +4,11 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .main-tags-img {
-  display: flex;
-  width: 100%;
-  height: auto;
+    width: 100%;
 }
 
 .filter-ul {
@@ -131,6 +130,6 @@
 }
 @media (max-width: 768px) {
   .main-tags-img {
-    
+    width: 150%;
   }
 }
