@@ -1,46 +1,95 @@
 main {
-    width: 100%;
+  width: 100%;
 }
 .main-div {
-    width: 100%;
-    padding: 80px 128px 128px 128px;
-    background-color: #0D171D;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
+  position: relative;
+  width: 100%;
+  padding: 80px 128px 128px 128px;
+  background-color: #0d171d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  z-index: 1;
 }
-.main-ul {
-    margin-right: 120px;
-}
+
 .main-h2 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 100px;
-    color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100px;
+  color: #ffffff;
 }
 .main-p {
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    color: #FFFFFF;
-    margin-top: 16px;
-    width: 482px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 16px;
+  width: 482px;
 }
 .main-btn {
-    background: transparent;
-    border: 1px solid #FAFAFA4D;
-    width: 131px;
-    height: 42px;
-    border-radius: 30px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    color: #FAFAFA;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 32px;
+  background: transparent;
+  border: 1px solid #fafafa4d;
+  width: 131px;
+  height: 42px;
+  border-radius: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
 }
 .main-img {
-    width: 504px;
-    height: 504px;
+  max-width: 504px;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1400px) {
+  .main-div {
+    padding: 80px 64px 128px 64px;
+  }
+}
+@media (max-width: 1300px) {
+  .main-div {
+    padding: 40px 32px 64px 32px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+}
+@media (max-width: 1200px) {
+  .main-h2 {
+    font-size: 70px;
+  }
+  .main-p {
+    font-size: 14px;
+  }
+  .main-img {
+    max-width: 400px;
+  }
+}
+@media (max-width: 985px) {
+  .main-div {
+    padding: 40px 16px 64px 16px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  .main-h2 {
+    font-size: 50px;
+  }
+  .main-p {
+    width: 90%;
+    font-size: 13px;
+  }
+  .main-btn {
+    margin-top: 24px;
+    width: 120px;
+    height: 36px;
+    font-size: 12px;
+  }
+
+  .main-img {
+    max-width: 320px;
+  }
 }
