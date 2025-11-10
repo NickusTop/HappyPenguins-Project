@@ -46,6 +46,10 @@ main {
   height: auto;
 }
 
+.main-img-small {
+  display: none;
+}
+
 @media (max-width: 1400px) {
   .main-div {
     padding: 80px 64px 128px 64px;
@@ -100,5 +104,16 @@ main {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     gap: 32px;
+    align-items: start;
+  }
+}
+@media (max-width: 375px) {
+  .main-img {
+    display: none;
+  }
+  .main-img-small {
+    display: flex;
+    width: 100%;
+    height: auto;
   }
 }
