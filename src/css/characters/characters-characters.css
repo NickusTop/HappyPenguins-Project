@@ -7,12 +7,13 @@
 }
 
 .main-tags-img {
-  position: relative;
   width: 100%;
-  top: -110px;
-  z-index: 1000;
-  left: 50%;
-  transform: translateX(-50%);
+  height: 170px;
+  background-image: url('../../img/characters/Tags.png');
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  overflow: hidden;
+  margin-top: -80px;
 }
 
 .filter-ul {
@@ -22,6 +23,7 @@
   display: flex;
   gap: 16px;
   padding: 0px 10px 0px 10px;
+  margin-top: 170px;
 }
 .filter-p {
   font-weight: 500;
@@ -111,12 +113,8 @@
 }
 @media (max-width: 768px) {
   .main-tags-img {
-    width: 150%;
-  }
-}
-@media (max-width: 480px) {
-  .main-tags-img {
-    width: 300%;
+    height: 130px;
+    margin-top: -60px;
   }
 }
 @media (max-width: 625px) {
