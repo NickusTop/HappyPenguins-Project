@@ -11,7 +11,6 @@ main {
   justify-content: space-between;
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 100px;
-  z-index: 1;
 }
 
 .main-h2 {
@@ -44,6 +43,10 @@ main {
   max-width: 504px;
   width: 100%;
   height: auto;
+}
+
+.main-img-small {
+  display: none;
 }
 
 @media (max-width: 1400px) {
@@ -100,5 +103,16 @@ main {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     gap: 32px;
+    align-items: start;
+  }
+}
+@media (max-width: 375px) {
+  .main-img {
+    display: none;
+  }
+  .main-img-small {
+    display: flex;
+    width: 100%;
+    height: auto;
   }
 }
