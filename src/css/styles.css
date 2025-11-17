@@ -1,4 +1,4 @@
-@import url('./mainpage/mainpage-header.css');
+/* @import url('./mainpage/mainpage-header.css'); */
 @import url('./mainpage/mainpage-hero.css');
 @import url('./mainpage/mainpage-characters.css');
 @import url('./mainpage/mainpage-episodes.css');
@@ -33,5 +33,6 @@ body {
 }
 
 main {
-    width: 100%;
+
+    width: 1440px;
 }
