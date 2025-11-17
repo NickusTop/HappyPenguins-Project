@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/HappyPenguins-Project/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Characters</title>
     
@@ -12,8 +12,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/HappyPenguins-Project/assets/main-676485d4.js"></script>
-    <link rel="stylesheet" href="/HappyPenguins-Project/assets/main-0e973742.css">
+    <script type="module" crossorigin src="/HappyPenguins-Project/assets/styles-f93410d0.js"></script>
+    <link rel="stylesheet" href="/HappyPenguins-Project/assets/styles-4183d5bb.css">
   </head>
   <body>
     <body>
@@ -35,13 +35,14 @@
       Smith family and beyond. Get to know these unforgettable characters on a
       whole new level - start exploring now!
     </p>
-    <button class="main-btn">Back home</button>
+    <a href="../../index.html"><button class="main-btn">Back home</button></a>
   </ul>
   <img src="../../img/characters/image.png" class="main-img" alt="" />
+  <img src="../../img/characters/image-small.png" class="main-img-small" alt="" />
 </div>
 
         <div class="characters-div">
-  <img src="../../img/characters/Tags.png" class="main-tags-img" alt="" />
+  <div class="main-tags-img"></div>
   <ul class="filter-ul">
     <li class="filter-li">
       <p class="filter-p">Name</p>
@@ -61,21 +62,41 @@
     </li>
     <li class="filter-li">
       <p class="filter-p">Species</p>
-      <select class="filter-select">
-        <option value=""></option>
-      </select>
+      <button class="select-btn">Human <img src="../../img/characters/chevron-down.png" class="chevron-img chevron-species" alt=""></button>
+      <ul class="select-ul select-ul-species">
+        <li class="select-li"><a class="select-a" href="">Human</a></li>
+        <li class="select-li"><a class="select-a" href="">Alien</a></li>
+        <li class="select-li"><a class="select-a" href="">Mythological Creature</a></li>
+        <li class="select-li"><a class="select-a" href="">Humanoid</a></li>
+        <li class="select-li"><a class="select-a" href="">Animal</a></li>
+        <li class="select-li"><a class="select-a" href="">Cronenberg</a></li>
+        <li class="select-li"><a class="select-a" href="">Poopybutthole</a></li>
+        <li class="select-li"><a class="select-a" href="">Robot</a></li>
+        <li class="select-li"><a class="select-a" href="">Disease</a></li>
+      </ul>
     </li>
     <li class="filter-li">
       <p class="filter-p">Type</p>
-       <select class="filter-select">
-        <option value=""></option>
-      </select>
+       <button class="select-btn">Parasite <img src="../../img/characters/chevron-down.png" class="chevron-img chevron-type" alt=""></button>
+      <ul class="select-ul select-ul-type">
+        <li class="select-li"><a class="select-a" href="">Parasite</a></li>
+        <li class="select-li"><a class="select-a" href="">Human with ants<br> in his eyes</a></li>
+        <li class="select-li"><a class="select-a" href="">Superhuman</a></li>
+        <li class="select-li"><a class="select-a" href="">Genetic <br> experiment</a></li>
+        <li class="select-li"><a class="select-a" href="">Fish-Person</a></li>
+        <li class="select-li"><a class="select-a" href="">Cromulon</a></li>
+      </ul>
     </li>
     <li class="filter-li">
       <p class="filter-p">Gender</p>
-       <select class="filter-select">
-        <option value=""></option>
-      </select>
+       <button class="select-btn">All <img src="../../img/characters/chevron-down.png" class="chevron-img chevron-gender" alt=""></button>
+      <ul class="select-ul select-ul-gender">
+        <li class="select-li"><a class="select-a" href="">All</a></li>
+        <li class="select-li"><a class="select-a" href="">Female</a></li>
+        <li class="select-li"><a class="select-a" href="">Male</a></li>
+        <li class="select-li"><a class="select-a" href="">Genderless</a></li>
+        <li class="select-li"><a class="select-a" href="">Unknow</a></li>
+      </ul>
     </li>
   </ul>
 </div>
