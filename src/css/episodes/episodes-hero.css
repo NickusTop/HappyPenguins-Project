@@ -1,0 +1,118 @@
+main {
+  width: 100%;
+}
+.main-div {
+  position: relative;
+  width: 100%;
+  padding: 80px 128px 128px 128px;
+  background-color: #0d171d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.main-h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100px;
+  color: #ffffff;
+}
+.main-p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 16px;
+  width: 482px;
+}
+.main-btn {
+  background: transparent;
+  border: 1px solid #fafafa4d;
+  width: 131px;
+  height: 42px;
+  border-radius: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+}
+.main-img {
+  max-width: 504px;
+  width: 100%;
+  height: auto;
+}
+
+.main-img-small {
+  display: none;
+}
+
+@media (max-width: 1400px) {
+  .main-div {
+    padding: 80px 64px 128px 64px;
+  }
+}
+@media (max-width: 1300px) {
+  .main-div {
+    padding: 40px 32px 64px 32px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+}
+@media (max-width: 1200px) {
+  .main-h2 {
+    font-size: 70px;
+  }
+  .main-p {
+    font-size: 14px;
+  }
+  .main-img {
+    max-width: 400px;
+  }
+}
+@media (max-width: 985px) {
+  .main-div {
+    padding: 40px 16px 64px 16px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  .main-h2 {
+    font-size: 50px;
+  }
+  .main-p {
+    width: 90%;
+    font-size: 13px;
+  }
+  .main-btn {
+    margin-top: 24px;
+    width: 120px;
+    height: 36px;
+    font-size: 12px;
+  }
+
+  .main-img {
+    max-width: 320px;
+  }
+}
+@media (max-width: 768px) {
+  .main-div {
+    flex-direction: column;
+    padding: 40px 16px 64px 16px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    gap: 32px;
+    align-items: start;
+  }
+}
+@media (max-width: 375px) {
+  .main-img {
+    display: none;
+  }
+  .main-img-small {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+}
