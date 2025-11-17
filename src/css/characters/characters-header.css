@@ -1,52 +1,70 @@
 header {
-    width: 100%;
-    background-color: #e0e0e0;
+  width: 100%;
+  background-color: #e0e0e0;
 }
 .header-div {
-    background-color: #f0f0f0;
-    width: 100%;
-    padding: 24px;
-    padding-left: 128px;
-    padding-right: 128px;
-    background-color: #0D171D;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #f0f0f0;
+  width: 100%;
+  padding: 24px;
+  padding-left: 128px;
+  padding-right: 128px;
+  background-color: #0d171d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .logohead-img {
-    width: 193px;
-    height: 73px;
+  width: 193px;
+  height: 73px;
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.1s;
 }
 .header-btn {
-    background: transparent;
-    border: 1px solid #FAFAFA4D;
-    width: 124px;
-    height: 42px;
-    border-radius: 30px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    color: #FAFAFA;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: transparent;
+  border: 1px solid #fafafa4d;
+  width: 124px;
+  height: 42px;
+  border-radius: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.1s;
+  cursor: pointer;
 }
 .search-img {
-    width: 18px;
-    height: 18px;
-    margin-right: 8px;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
 }
 @media (max-width: 768px) {
-    .header-div {
-        padding-left: 24px;
-        padding-right: 24px;
-    }
-    .logohead-img {
-        width: 150px;
-        height: auto;
-    }
-    .header-btn {
-        width: 100px;
-        height: 36px;
-        font-size: 12px;
-    }
+  .header-div {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .logohead-img {
+    width: 150px;
+    height: auto;
+  }
+  .header-btn {
+    width: 100px;
+    height: 36px;
+    font-size: 12px;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
