@@ -1,0 +1,1 @@
+import"./styles-617fc61c.js";const c=document.querySelectorAll(".character-name"),e=document.getElementById("characterImage");c.forEach(t=>{t.addEventListener("click",()=>{c.forEach(a=>a.classList.remove("active")),t.classList.add("active"),e.style.opacity=0,setTimeout(()=>{e.src=t.getAttribute("data-img"),e.style.opacity=1},200)})});
