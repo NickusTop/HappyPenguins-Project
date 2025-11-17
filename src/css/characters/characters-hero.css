@@ -47,6 +47,7 @@ main {
   opacity: 0;
   animation: fadeInUp 1s forwards;
   animation-delay: 0.1s;
+  cursor: pointer;
 }
 .main-img {
   max-width: 504px;
