@@ -1,30 +1,16 @@
-const selectUlstatus = document.querySelector('.select-ul-status');
-const selectUlspecies = document.querySelector('.select-ul-species');
-const selectUltype = document.querySelector('.select-ul-type')
-const selectUlgender = document.querySelector('.select-ul-gender');
-const selectBtnstatus = document.querySelector('.select-btn-status');
-const selectBtnspecies = document.querySelector('.select-btn-species');
-const selectBtntype = document.querySelector(".select-btn-type")
-const selectBtngender = document.querySelector('.select-btn-gender');
+const selectButtons = document.querySelectorAll('.select-btn');
+const selectUls = document.querySelectorAll('.select-ul');
 
-selectBtnstatus.addEventListener('click', clickUl);
-selectBtnspecies.addEventListener('click', clickUl2);
-selectBtntype.addEventListener('click', clickUl3)
-selectBtngender.addEventListener('click', clickUl4);
-
-
-function clickUl() {
-  selectUlstatus.classList.toggle('active');
-}
-    
-function clickUl2() {
-  selectUlspecies.classList.toggle('active');
-}
-
-function clickUl3() {
-    selectUltype.classList.toggle('active')
-}
-
-function clickUl4() {
-  selectUlgender.classList.toggle('active');
-}
+selectButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const ul = btn.nextElementSibling;
+    if (ul && ul.classList.contains('select-ul')) {
+      selectUls.forEach(otherUl => {
+        if (otherUl !== ul) {
+          otherUl.classList.remove('active');
+        }
+      });
+      ul.classList.toggle('active');
+    }
+  });
+});
