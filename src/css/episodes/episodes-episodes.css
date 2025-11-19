@@ -98,12 +98,12 @@
 .select-li:not(:first-child) {
   margin-top: 8px;
 }
-.select-ul-status,
+/* .select-ul-status,
 .select-ul-species,
 .select-ul-type,
 .select-ul {
   display: none;
-}
+} */
 @media (max-width: 1065px) {
   .filter-ul {
     display: flex;
