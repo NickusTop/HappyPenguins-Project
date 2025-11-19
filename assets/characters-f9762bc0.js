@@ -1,1 +1,0 @@
-import"./styles-617fc61c.js";const l=document.querySelectorAll(".select-btn"),s=document.querySelectorAll(".select-ul");l.forEach(t=>{t.addEventListener("click",()=>{const e=t.nextElementSibling;e&&e.classList.contains("select-ul")&&(s.forEach(c=>{c!==e&&c.classList.remove("active")}),e.classList.toggle("active"))})});
