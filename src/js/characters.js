@@ -1,5 +1,5 @@
-import { findCharacters } from "./characters/findCharacters.js"
-import { renderCharacters } from "./characters/renderCharacters.js"
+import { findCharacters } from './characters/findCharacters.js';
+import { renderCharacters } from './characters/renderCharacters.js';
 
 const selectButtons = document.querySelectorAll('.select-btn');
 const selectUls = document.querySelectorAll('.select-ul');
@@ -19,7 +19,6 @@ loadMorebtn.addEventListener('click', async () => {
   await loadCharacters();
   loadMorebtn.disabled = false;
 });
-
 
 selectButtons.forEach(btn => {
   btn.addEventListener('click', () => {
