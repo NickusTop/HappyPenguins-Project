@@ -1,9 +1,25 @@
 import { findCharacters } from "./characters/findCharacters.js"
-import { renderCharcters } from "./characters/renderCharacters.js"
+import { renderCharacters } from "./characters/renderCharacters.js"
 
 const selectButtons = document.querySelectorAll('.select-btn');
 const selectUls = document.querySelectorAll('.select-ul');
-const charactersDiv = document.querySelector('.characterspages-div')
+const charactersList = document.querySelector('.characters-ul');
+const loadMorebtn = document.querySelector('.loadmore-btn');
+
+let pageList = 1;
+
+async function loadCharacters() {
+  const characters = await findCharacters(pageList);
+  renderCharacters(charactersList, characters);
+}
+
+loadMorebtn.addEventListener('click', async () => {
+  loadMorebtn.disabled = true;
+  pageList++;
+  await loadCharacters();
+  loadMorebtn.disabled = false;
+});
+
 
 selectButtons.forEach(btn => {
   btn.addEventListener('click', () => {
@@ -19,12 +35,4 @@ selectButtons.forEach(btn => {
   });
 });
 
-async function showCharacters() {
-  const characters = await findCharacters();
-  console.log(characters);
-  return characters;
-}
-
-showCharacters();
-
-renderCharcters(charactersDiv)
+loadCharacters();
