@@ -1,8 +1,9 @@
+
 import blodgettOptimized from '../img/mainpage/1.png';
-import blodgettOptimized from '../img/mainpage/18.svg';
-import blodgettOptimized from '../img/mainpage/29.svg';
-import blodgettOptimized from '../img/mainpage/30.svg';
-import blodgettOptimized from '../img/mainpage/31.svg';
+import blodgettOptimize from '../img/mainpage/18.svg';
+import blodgettOptimiz from '../img/mainpage/29.svg';
+import blodgettOptim from '../img/mainpage/30.svg';
+import blodgettOpti from '../img/mainpage/31.svg';
 
 
 const names = document.querySelectorAll('.character-name');
