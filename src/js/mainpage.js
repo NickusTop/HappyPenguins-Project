@@ -1,9 +1,9 @@
 
-import blodgettOptimized from '../img/mainpage/1.png';
-import blodgettOptimize from '../img/mainpage/18.svg';
-import blodgettOptimiz from '../img/mainpage/29.svg';
-import blodgettOptim from '../img/mainpage/30.svg';
-import blodgettOpti from '../img/mainpage/31.svg';
+import blodgettOptimized from '../../src/img/mainpage/1.png';
+import blodgettOptimize from '../../src/img/mainpage/18.svg';
+import blodgettOptimiz from '../../src/img/mainpage/29.svg';
+import blodgettOptim from '../../src/img/mainpage/30.svg';
+import blodgettOpti from '../../src/img/mainpage/31.svg';
 
 
 const names = document.querySelectorAll('.character-name');
