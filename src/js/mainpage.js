@@ -1,3 +1,4 @@
+
 import blodgettOptimized from "../img/mainpage/pistolet.png";
 import jerry from "../img/mainpage/holova.png";
 import hz from "../img/mainpage/red.svg";
@@ -11,6 +12,7 @@ const images = {
   prosto,
   neznay
 };
+
 
 const names = document.querySelectorAll('.character-name');
 const image = document.getElementById('characterImage');
@@ -31,6 +33,4 @@ names.forEach(name => {
     }, 200);
   });
 });
-
-
-     
+ 
