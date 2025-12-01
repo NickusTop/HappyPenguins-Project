@@ -1,9 +1,11 @@
 
+
 import blodgettOptimized from "../img/mainpage/pistolet.png";
 import jerry from "../img/mainpage/holova.png";
 import hz from "../img/mainpage/red.svg";
 import prosto from "../img/mainpage/green.svg";
 import neznay from "../img/mainpage/pink.svg";
+
 
 
 
@@ -27,3 +29,5 @@ names.forEach(name => {
 });
 
      
+
+    
