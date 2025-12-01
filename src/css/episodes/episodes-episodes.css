@@ -1,4 +1,4 @@
-.characters-div {
+ .characters-div {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -97,63 +97,4 @@
 }
 .select-li:not(:first-child) {
   margin-top: 8px;
-}
-/* .select-ul-status,
-.select-ul-species,
-.select-ul-type,
-.select-ul {
-  display: none;
-} */
-@media (max-width: 1065px) {
-  .filter-ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-@media (max-width: 768px) {
-  .main-tags-img {
-    height: 130px;
-    margin-top: -60px;
-  }
-}
-@media (max-width: 625px) {
-  .filter-ul {
-    list-style-type: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: max-content max-content;
-    gap: 16px;
-    width: 100%;
-    max-width: 550px;
-    justify-content: center;
-  }
-
-  .filter-ul li:first-child {
-    grid-column: span 2;
-  }
-  .filter-input-div {
-    width: 100%;
-  }
-
-  .select-btn {
-    width: 180px;
-    justify-content: space-between;
-  }
-
-  .chevron-status,
-  .chevron-species,
-  .chevron-type,
-  .chevron-gender {
-    margin-left: 0px;
-  }
-
-  .filter-ul {
-    margin-top: 40px;
-  }
-}
-@media (max-width: 480px) {
-  .select-btn {
-    width: 150px;
-  }
 }
