@@ -1,9 +1,12 @@
 
-import blodgettOptimized from '../../src/img/mainpage/1.png';
-import blodgettOptimize from '../../src/img/mainpage/18.svg';
-import blodgettOptimiz from '../../src/img/mainpage/29.svg';
-import blodgettOptim from '../../src/img/mainpage/30.svg';
-import blodgettOpti from '../../src/img/mainpage/31.svg';
+
+import blodgettOptimized from "../img/mainpage/pistolet.png";
+import jerry from "../img/mainpage/holova.png";
+import hz from "../img/mainpage/red.svg";
+import prosto from "../img/mainpage/green.svg";
+import neznay from "../img/mainpage/pink.svg";
+
+
 
 
 const names = document.querySelectorAll('.character-name');
