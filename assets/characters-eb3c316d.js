@@ -1,4 +1,4 @@
-import"./styles-4348605e.js";const l="https://rickandmortyapi.com/api/character/";async function o(a){try{return(await(await fetch(l+`?page=${a}`)).json()).results}catch(e){console.log(e)}}function i(a,e){const c=e.map(t=>`
+import"./styles-877a87d4.js";const l="https://rickandmortyapi.com/api/character/";async function o(a){try{return(await(await fetch(l+`?page=${a}`)).json()).results}catch(e){console.log(e)}}function i(a,e){const c=e.map(t=>`
       <ul class="character-ul">
         <img src="${t.image}" alt="" class="character-img">
         <h2 class="character-h2">${t.name}</h2>
