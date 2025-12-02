@@ -1,4 +1,4 @@
-  .characters-div {
+   .characters-div {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -97,4 +97,4 @@
 }
 .select-li:not(:first-child) {
   margin-top: 8px;
-}
+}  
