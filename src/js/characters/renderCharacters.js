@@ -1,17 +1,38 @@
-import { findCharacters } from './findCharacters.js';
+export function renderCharacters(
+    charactersList,
+    characters,
+    start = 0,
+    count = 20,
+    reset = false
+) {
+    if (reset) charactersList.innerHTML = '';
 
-export function renderCharacters(charactersList, characters) {
-  const html = characters.map(character => {
-    return `
-      <ul class="character-ul">
-        <img src="${character.image}" alt="" class="character-img">
-        <h2 class="character-h2">${character.name}</h2>
-        <p class="character-p">Origin: <span class="character-span">${character.origin.name}</span></p>
-        <p class="character-p">Location: <span class="character-span">${character.location.name}</span></p>
-      </ul>
-    `;
-  }).join("");
+    const charactersToRender = characters.slice(start, start + count);
 
-  charactersList.insertAdjacentHTML("beforeend", html);
+    const htmlContent = charactersToRender
+        .map(char => {
+            if (!char) return '';
+            const episodeData = JSON.stringify(char.episode || []); 
+
+            return `
+            <ul class="character-ul"
+                data-image="${char.image}"
+                data-status="${char.status}"
+                data-species="${char.species}"
+                data-gender="${char.gender}"
+                data-origin="${char.origin.name}"
+                data-location="${char.location.name}"
+                data-type="${char.type || ''}"
+                data-episode='${episodeData}'>  <img src="${char.image}" alt="" class="character-img">
+                <h2 class="character-h2">${char.name}</h2>
+                <p class="character-p">Origin: <span class="character-span">${char.origin.name}</span></p>
+                <p class="character-p">Location: <span class="character-span">${char.location.name}</span></p>
+            </ul>
+            `;
+        })
+        .join('');
+
+    charactersList.insertAdjacentHTML('beforeend', htmlContent);
+
+    return charactersToRender.length;
 }
-

@@ -20,23 +20,47 @@ header {
   animation: fadeInUp 1s forwards;
   animation-delay: 0.1s;
 }
-.header-btn {
-  background: transparent;
-  border: 1px solid #fafafa4d;
-  width: 124px;
-  height: 42px;
+.ul-input {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  border: 2px solid #fafafa4d;
   border-radius: 30px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  color: #fafafa;
+  padding: 12px 24px;
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0;
-  animation: fadeInUp 1s forwards;
-  animation-delay: 0.1s;
-  cursor: pointer;
 }
+.header-input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  width: 60px;
+  color: rgb(255, 255, 255);
+  font-family: 'Montserrat', sans-serif;
+  outline: none;
+  text-align: center;
+  font-weight: 500;
+}
+
+.header-input::placeholder {
+    color: #ffffff;
+    font-size: 16px;
+    opacity: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+}
+
+.header-input:focus::placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
 .search-img {
   width: 18px;
   height: 18px;
