@@ -138,10 +138,15 @@
 /* Floating tags */
 .floating-tags {
     position: relative;
-    width: 100%;
-    margin: -30px 16px 0;
-    height: 120px;
-    overflow: hidden;
+        width: 100%;
+        margin: -30px 16px 0;
+        height: 120px;
+        overflow: hidden;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
 }
 
 .tag {
@@ -153,6 +158,7 @@
     white-space: nowrap;
     cursor: pointer;
     transition: all 0.3s ease;
+    
 }
 
 .tag:hover {
