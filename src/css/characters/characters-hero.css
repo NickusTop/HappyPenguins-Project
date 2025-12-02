@@ -21,9 +21,6 @@ main {
   font-family: 'Montserrat', sans-serif;
   font-size: 100px;
   color: #ffffff;
-  opacity: 0;
-  animation: fadeInUp 1s forwards;
-  animation-delay: 0.1s;
 }
 .main-p {
   font-family: 'Montserrat', sans-serif;
@@ -31,11 +28,9 @@ main {
   color: #ffffff;
   margin-top: 16px;
   width: 482px;
-  opacity: 0;
-  animation: fadeInUp 1s forwards;
-  animation-delay: 0.1s;
 }
 .main-btn {
+  position: relative;
   background: transparent;
   border: 1px solid #fafafa4d;
   width: 131px;
@@ -48,25 +43,48 @@ main {
   align-items: center;
   justify-content: center;
   margin-top: 32px;
-  opacity: 0;
-  animation: fadeInUp 1s forwards;
-  animation-delay: 0.1s;
   cursor: pointer;
+  transition: backdrop-filter 0.3s ease;
+  overflow: hidden;
+  z-index: 122;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+.main-btn:hover {
+  color: black;
+}
+.main-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  background-color: #A1D737;
+  height: 100%;
+  border-radius: 30px;
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+.main-btn:hover::after {
+  width: 100%;
+  transition: width 0.3s ease;
 }
 .main-img {
   max-width: 504px;
   width: 100%;
+  border-radius: 100px;
   height: auto;
-  opacity: 0;
-  animation: fadeInUp 1s forwards;
-  animation-delay: 0.1s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-img:hover {
+  box-shadow: 0 4px 15px rgba(0, 255, 26, 0.3);
+  transform: rotate(3deg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .main-img-small {
   display: none;
-  opacity: 0;
-  animation: fadeInUp 1s forwards;
-  animation-delay: 0.1s;
 }
 
 @media (max-width: 1400px) {
@@ -134,16 +152,5 @@ main {
     display: flex;
     width: 100%;
     height: auto;
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
