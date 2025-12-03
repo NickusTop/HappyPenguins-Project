@@ -1,18 +1,45 @@
-  <div class="characters-div">
-  <div class="main-tags-img"></div>
-  <ul class="filter-ul">
-    <li class="filter-li">
-      <p class="filter-p">Name</p>
-      <div class="filter-input-div">
-        <input type="text" class="filter-input" placeholder="Enter name" />
-        <img src="./img/characters/search-black.png" class="search-inp-img" alt="">
-      </div>
-    </li>
-    <li class="filter-li">
-      <p class="filter-p">Episode code</p>
-      <button class="select-btn">All episodes <img src="./img/characters/chevron-down.png" class="chevron-img chevron-status" alt=""></button>
-     <ul class="select-ul select-ul-status" id="episodes-menu"></ul>
-    </li>
-  </ul>
-      <button class="loadmore-btn">Load more</button>
-</div>  
+<div class="container topbar-inner">
+  <div class="controls">
+    <label class="field-label">Name</label>
+    <div class="search">
+      <input
+        id="searchInput"
+        type="search"
+        placeholder="Enter name"
+        aria-label="Search episodes by name"
+        class="InputInput"
+      />
+      <button id="searchBtn" aria-label="Search">
+        <img
+          src="./img/characters/search-black.png"
+          class="search-inp-img"
+          alt=""
+        />
+      </button>
+    </div>
+  </div>
+  <div class="controls">
+    <label class="field-label">Episode code</label>
+    <div class="select-wrap">
+      <select id="seasonSelect" aria-label="Filter by season">
+        <option value="all">All season</option>
+        <option value="1">1 season</option>
+        <option value="2">2 season</option>
+        <option value="3">3 season</option>
+        <option value="4">4 season</option>
+        <option value="5">5 season</option>
+        <option value="6">6 season</option>
+      </select>
+    </div>
+  </div>
+</div>
+<main class="container">
+  <section id="episodesGrid" class="grid"></section>
+  <div id="emptyState" class="empty hidden" role="status" aria-live="polite">
+    <img src="./img/episodes/404-episodes.png" alt="" class="portal" />
+    <h2>Oops! Try looking for something else...</h2>
+  </div>
+  <div class="load-wrap">
+    <button id="loadMoreBtn" class="load-more">Load more</button>
+  </div>
+</main>
