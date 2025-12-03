@@ -112,7 +112,7 @@
 .social-icon-ec {
     width: 56px;
     height: 56px;
-    border: #FAFAFA;
+    border: 1px solid rgba(255, 255, 255, 0.2);;
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -129,6 +129,27 @@
 .social-icon-ec img {
     width: 24px;
     height: 24px;
+}
+
+.footer-link-ec {
+  position: relative;
+  text-decoration: none;
+  color: #ffff;
+}
+
+.footer-link-ec::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background: currentColor; 
+  transition: width 0.3s ease;
+}
+
+.footer-link-ec:hover::after {
+  width: 100%;
 }
 
 .footer-bottom-ec {
