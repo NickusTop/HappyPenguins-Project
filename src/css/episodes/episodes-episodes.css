@@ -89,12 +89,11 @@ select{
   url('../../img/episodes/image\ 23.png') center/cover no-repeat;
   border:4px solid var(--card-stroke);
   box-shadow:var(--shadow);
-background-color: rgba(17, 17, 17, 0.8); /* 0.1 = 10% непрозрачности = 90% прозрачности */
+background-color: rgba(17, 17, 17, 0.8); 
   display:flex;
   flex-direction:column;
   justify-content:flex-end;
   padding:18px;
-  color:white;
 }
 
 .topbar-inner {
