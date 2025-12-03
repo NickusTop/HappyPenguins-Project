@@ -13,6 +13,8 @@ const nameInput = document.querySelector(".filter-input");
 const nameInputHeader = document.querySelector(".header-input");
 const noCharacters = document.querySelector(".nocharacters-ul");
 const modal = document.querySelector(".overflow-menu");
+const loader = document.querySelector(".characters-loader");
+
 
 let selectUlstatus = document.querySelectorAll(".select-ul-status li");
 let selectUlspecies = document.querySelectorAll(".select-ul-species li");
@@ -43,7 +45,7 @@ function handleNameInput(value) {
     } else {
         localStorage.setItem('selectedName', v);
     }
-    loadFilteredCharacters(state);
+    loadFilteredCharactersWithLoader();
 }
 
 nameInput.addEventListener("input", () => {
@@ -55,7 +57,6 @@ nameInputHeader.addEventListener("input", () => {
     handleNameInput(nameInputHeader.value);
     nameInput.value = nameInputHeader.value;
 });
-
 
 charactersList.addEventListener("click", (e) => {
     const ul = e.target.closest(".character-ul");
@@ -87,17 +88,37 @@ modalCloseBtn.addEventListener("click", () => {
 function menuDown() {
     selectButtons.forEach(btn => {
         btn.addEventListener("click", () => {
-            let ul = btn.nextElementSibling;
+            let currentUl = btn.nextElementSibling;
+            let currentChevron = btn.querySelector(".chevron-img");
+
             selectButtons.forEach(otherBtn => {
-              let otherUl = otherBtn.nextElementSibling;
-              if (otherUl && otherUl !== ul) {
-                otherUl.classList.remove("active")
-              }
-            })
-            if (ul) ul.classList.toggle("active");
+                let otherUl = otherBtn.nextElementSibling;
+                let otherChevron = otherBtn.querySelector(".chevron-img");
+
+                if (otherUl !== currentUl) {
+                    otherUl.classList.remove("active");
+                    otherChevron.classList.remove("rotate");
+                }
+            });
+            currentUl.classList.toggle("active");
+            currentChevron.classList.toggle("rotate");
         });
     });
 }
+
+async function loadFilteredCharactersWithLoader() {
+    loader.classList.add("active");
+    charactersList.style.opacity = "0";
+
+    await new Promise(res => setTimeout(res, 150));
+
+    await loadFilteredCharacters(state);
+
+    loader.classList.remove("active");
+    charactersList.style.opacity = "1";
+}
+
+
 
 function start() {
     localStorage.setItem('selectedStatus', 'All');
@@ -117,12 +138,14 @@ function start() {
         typeText,
         genderText,
         selectUls,
-        () => loadFilteredCharacters(state)
+        () => loadFilteredCharactersWithLoader()
+
     );
 
     loadMorebtn.addEventListener("click", () => loadMoreCharacters(state));
 
-    loadFilteredCharacters(state);
+    loadFilteredCharactersWithLoader();
+;
 }
 
 start();
